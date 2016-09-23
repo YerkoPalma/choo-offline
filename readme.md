@@ -52,7 +52,7 @@ Required function that get as the only argument, the offline plugin object. The 
    ```javascript
       send('xhrEffect', { foo: bar, _backup: 'nonXhrBackup' })
    ```
-   The above call will call `xhrEffect` normally, but, assuming that is a xhr call, when offline, it will call the `nonXhrBackup` effect|reducer, passing the same data, excluding the _backup strings, i.e. the `foo` option. 
+   The above statement will call `xhrEffect` normally, but, assuming that is a xhr call, when offline, it will call the `nonXhrBackup` effect|reducer, passing the same data, excluding the _backup strings, i.e. the `foo` option. 
 - `wrapInitialState`: To get the initial local state.
 
 ## License
