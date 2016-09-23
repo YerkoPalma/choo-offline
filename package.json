@@ -1,0 +1,35 @@
+{
+  "name": "choo-offline",
+  "description": "offline first support for choo apps",
+  "author": "YerkoPalma",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard --verbose | snazzy && ava",
+    "start": "budo example.js --open --pushstate --host 0.0.0.0 --port 8080 --"
+  },
+  "repository": "YerkoPalma/choo-offline",
+  "keywords": [
+    "choo",
+    "offline",
+    "service-worker",
+    "local-storage"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "is-online": "^5.1.2",
+    "localforage": "^1.4.2",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "budo": "^9.2.0",
+    "choo": "^3.3.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.1.0"
+  }
+}
