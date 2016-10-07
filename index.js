@@ -1,7 +1,7 @@
 /* global navigator */
 const xtend = require('xtend')
 const isOnline = require('is-online')
-let localforage = {}
+var localforage = {}
 const assert = require('assert')
 
 function offline (opts, cb) {
