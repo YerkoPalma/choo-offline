@@ -1,6 +1,4 @@
 /* global navigator */
-'use strict'
-
 const xtend = require('xtend')
 const isOnline = require('is-online')
 let localforage = {}
@@ -79,6 +77,13 @@ function offline (opts, cb) {
       onStateChange,
       onAction,
       wrapInitialState: function (appState) {
+        // if there is nothing in the database, but initial local state is defined
+        // set initial data for indexedDB as initial app state
+        // this will be hit only once, because in future calls
+        // localState will be defined
+        if (!localState && appState) {
+          localforage.setItem('app', appState)
+        }
         return xtend(appState, localState)
       }
     })
