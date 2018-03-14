@@ -28,7 +28,7 @@
   "devDependencies": {
     "ava": "*",
     "budo": "^9.2.0",
-    "choo": "^6.10.2",
+    "choo": "^6.10.3",
     "snazzy": "^6.0.0",
     "standard": "^8.1.0"
   }
