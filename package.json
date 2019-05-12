@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "assert": "^1.4.1",
+    "assert": "^2.0.0",
     "is-online": "^5.1.2",
     "localforage": "^1.4.2",
     "xtend": "^4.0.1"
